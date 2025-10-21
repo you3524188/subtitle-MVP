@@ -1,0 +1,17 @@
+# Render.com deploy spec
+services:
+  - type: web
+    name: subtitle-mvp
+    env: docker
+    autoDeploy: true
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: CORS_ORIGINS
+        value: "*"
+      - key: ASR_MODEL
+        value: "whisper-1"
+      - key: CROSSFADE_SEC
+        value: "0.2"

@@ -1,0 +1,15 @@
+{
+  "profile_name": "talk_default",
+  "silence_threshold_db": -35.0,
+  "min_silence_sec": 0.35,
+  "crossfade_sec": 0.2,
+  "fillers": ["えー","あのー","えっと","そのー","まー","えぇと"],
+  "punctuation_style": "casual",
+  "normalize_rules": [
+    {"from":"　","to":" "},
+    {"from":"\u3000","to":" "},
+    {"from":"～","to":"〜"}
+  ],
+  "subtitle_style": {"font_family":"Noto Sans JP","font_size":42,"outline":3,"shadow":2,"position":"bottom"}
+}
+
